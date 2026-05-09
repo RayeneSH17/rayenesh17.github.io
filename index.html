@@ -7,19 +7,58 @@
 
   <!-- Reveal.js CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/night.css" id="theme">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/black.css" id="theme">
 
+  <!-- Custom Black / White / Pink Theme -->
   <style>
+    /* Global background */
+    .reveal {
+      background: #000; /* black */
+    }
+
+    /* Text colors */
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal p,
+    .reveal ul,
+    .reveal li {
+      color: #fff; /* white */
+    }
+
+    /* Pink accents */
+    .reveal a,
+    .reveal strong,
+    .reveal .fragment {
+      color: #ff4fa3; /* hot pink */
+    }
+
+    /* Footer */
     footer {
       position: absolute;
       bottom: 10px;
       left: 20px;
       font-size: 14px;
-      opacity: 0.6;
+      opacity: 0.7;
+      color: #ff4fa3;
     }
+
+    /* Pink bullets */
+    .reveal ul li::marker {
+      color: #ff4fa3;
+    }
+
+    /* Pink underline for section titles */
+    .reveal h2 {
+      border-bottom: 2px solid #ff4fa3;
+      padding-bottom: 10px;
+      display: inline-block;
+    }
+
+    /* Image styling */
     img {
       border-radius: 10px;
-      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+      box-shadow: 0 0 25px rgba(255, 79, 163, 0.4); /* pink glow */
     }
   </style>
 </head>
@@ -36,7 +75,7 @@
       <footer>Assignment 2 – Reveal.js</footer>
     </section>
 
-    <!-- Slide 1 -->
+    <!-- Requirements Slide -->
     <section data-transition="fade">
       <h2>Project Requirements</h2>
       <ul>
@@ -49,7 +88,7 @@
       <footer>Reveal.js Presentation</footer>
     </section>
 
-    <!-- Slide 2 -->
+    <!-- Overview Slide -->
     <section data-transition="slide">
       <h2>Overview</h2>
       <ul>
@@ -63,12 +102,12 @@
     <!-- Image Slide -->
     <section data-transition="convex">
       <h2>Image Example</h2>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/512px-Placeholder_view_vector.svg.png" 
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/512px-Placeholder_view_vector.svg.png"
            alt="Sample Image" width="450">
       <footer>Image Example</footer>
     </section>
 
-    <!-- Sources -->
+    <!-- Sources Slide -->
     <section data-transition="concave">
       <h2>Sources</h2>
       <ul>
@@ -98,7 +137,7 @@
     progress: true,
     slideNumber: true,
     center: true,
-    transition: 'slide', // default transition
+    transition: 'slide',
     backgroundTransition: 'fade'
   });
 </script>
