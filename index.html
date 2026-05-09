@@ -8,42 +8,84 @@
   <!-- Reveal.js CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/night.css" id="theme">
+
+  <style>
+    footer {
+      position: absolute;
+      bottom: 10px;
+      left: 20px;
+      font-size: 14px;
+      opacity: 0.6;
+    }
+    img {
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    }
+  </style>
 </head>
 <body>
 
 <div class="reveal">
   <div class="slides">
-    <section>
-      <h1>Assignment 2</h1>
-      <h3>Reveal.js Presentation</h3>
-      <ul>
-        <li>Framework: Reveal.js</li>
-        <li>Hosting: GitHub Pages</li>
-        <li>Features: Markdown, Images, Non‑default theme</li>
-      </ul>
+
+    <!-- Title Slide -->
+    <section data-transition="zoom">
+      <h1>Assignment 2</h1>
+      <h3>Reveal.js Presentation</h3>
+      <p style="margin-top: 40px; opacity: 0.8;">Created by Rayene Souahi</p>
+      <footer>Assignment 2 – Reveal.js</footer>
     </section>
 
-    <section>
+    <!-- Slide 1 -->
+    <section data-transition="fade">
+      <h2>Project Requirements</h2>
+      <ul>
+        <li class="fragment">Framework: Reveal.js</li>
+        <li class="fragment">Hosting: GitHub Pages</li>
+        <li class="fragment">Markdown support</li>
+        <li class="fragment">Images included</li>
+        <li class="fragment">Non‑default theme</li>
+      </ul>
+      <footer>Reveal.js Presentation</footer>
+    </section>
+
+    <!-- Slide 2 -->
+    <section data-transition="slide">
       <h2>Overview</h2>
       <ul>
-        <li>What Reveal.js is</li>
-        <li>How slides are structured</li>
-        <li>How navigation works</li>
+        <li class="fragment">What Reveal.js is</li>
+        <li class="fragment">How slides are structured</li>
+        <li class="fragment">How navigation works</li>
       </ul>
+      <footer>Overview</footer>
     </section>
 
-    <section>
-      <h2>Image Example</h2>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/512px-Placeholder_view_vector.svg.png" alt="Sample Image">
+    <!-- Image Slide -->
+    <section data-transition="convex">
+      <h2>Image Example</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/512px-Placeholder_view_vector.svg.png" 
+           alt="Sample Image" width="450">
+      <footer>Image Example</footer>
     </section>
 
-    <section>
+    <!-- Sources -->
+    <section data-transition="concave">
       <h2>Sources</h2>
       <ul>
-        <li><a href="https://revealjs.com">Reveal.js Docs</a></li>
-        <li><a href="https://docs.github.com/en/pages">GitHub Pages Docs</a></li>
+        <li><a href="https://revealjs.com">Reveal.js Documentation</a></li>
+        <li><a href="https://docs.github.com/en/pages">GitHub Pages Documentation</a></li>
       </ul>
+      <footer>Sources</footer>
     </section>
+
+    <!-- Final Slide -->
+    <section data-transition="zoom">
+      <h2>Thank You</h2>
+      <p class="fragment">Assignment 2 Completed Successfully</p>
+      <p class="fragment">Hosted on GitHub Pages</p>
+      <footer>End of Presentation</footer>
+    </section>
+
   </div>
 </div>
 
@@ -55,7 +97,9 @@
     controls: true,
     progress: true,
     slideNumber: true,
-    center: true
+    center: true,
+    transition: 'slide', // default transition
+    backgroundTransition: 'fade'
   });
 </script>
 
