@@ -3,109 +3,59 @@
 <head>
   <meta charset="utf-8">
   <title>Assignment 2 – Reveal.js Presentation</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Reveal.js core CSS -->
+  <!-- Reveal.js CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
-  <!-- Non-default theme -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/night.css" id="theme">
-  <!-- Syntax highlighting -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/monokai.css">
 </head>
 <body>
 
 <div class="reveal">
   <div class="slides">
-    <section data-markdown data-separator="^---$" data-separator-vertical="^--$">
-      <textarea data-template>
-# Assignment 2  
-## Reveal.js Presentation
+    <section>
+      <h1>Assignment 2</h1>
+      <h3>Reveal.js Presentation</h3>
+      <ul>
+        <li>Framework: Reveal.js</li>
+        <li>Hosting: GitHub Pages</li>
+        <li>Features: Markdown, Images, Non‑default theme</li>
+      </ul>
+    </section>
 
-- **Framework:** Reveal.js  
-- **Hosting:** GitHub Pages  
-- **Features:**  
-  - Markdown  
-  - Images  
-  - Non-default theme  
-  - Horizontal & vertical navigation
+    <section>
+      <h2>Overview</h2>
+      <ul>
+        <li>What Reveal.js is</li>
+        <li>How slides are structured</li>
+        <li>How navigation works</li>
+      </ul>
+    </section>
 
----
+    <section>
+      <h2>Image Example</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/512px-Placeholder_view_vector.svg.png" alt="Sample Image">
+    </section>
 
-# Overview
-
-- What Reveal.js is  
-- How slides are structured  
-- How navigation works  
-- Sources and screenshots
-
----
-
-# Reveal.js Basics
-
-- HTML presentation framework  
-- Supports Markdown, themes, plugins  
-- Keyboard navigation:
-  - Left/Right → horizontal
-  - Up/Down → vertical
-
----
-
-# Example: Vertical Slides
-
-## Main Topic (Horizontal)
-Press ↓ to see details
-
---
-### Detail 1
-First vertical slide
-
---
-### Detail 2
-Second vertical slide
-
----
-
-# Image Example
-
-![Sample Image](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/512px-Placeholder_view_vector.svg.png)
-
----
-
-# Sources
-
-- Reveal.js: https://revealjs.com  
-- GitHub Pages: https://docs.github.com/en/pages  
-- Image: Wikimedia Commons placeholder
-
----
-
-# Report Info
-
-- URL: https://rayenesh17.github.io/  
-- Include screenshots of:
-  - Title slide  
-  - Vertical slides  
-  - Image slide
-      </textarea>
+    <section>
+      <h2>Sources</h2>
+      <ul>
+        <li><a href="https://revealjs.com">Reveal.js Docs</a></li>
+        <li><a href="https://docs.github.com/en/pages">GitHub Pages Docs</a></li>
+      </ul>
     </section>
   </div>
 </div>
 
-<!-- Reveal.js core JS -->
+<!-- Reveal.js JS -->
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
-<!-- Plugins -->
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/markdown/markdown.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/highlight.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/notes/notes.js"></script>
-
 <script>
   Reveal.initialize({
     hash: true,
     controls: true,
     progress: true,
     slideNumber: true,
-    center: true,
-    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+    center: true
   });
 </script>
 
