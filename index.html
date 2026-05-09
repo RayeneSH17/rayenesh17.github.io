@@ -1,1 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Assignment 2 – Reveal.js Presentation</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Reveal.js core CSS from CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
+  <!-- Non-default theme -->
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/night.css" id="theme">
+
+  <!-- Code syntax highlighting (optional) -->
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/plugin/highlight/monokai.css">
+</head>
+<body>
+
+<div class="reveal">
+  <div class="slides">
+    <!-- Markdown slides -->
+    <section data-markdown data-separator="^---$" data-separator-vertical="^--$" data-separator-notes="^Note:">
+      <textarea data-template>
+# Assignment 2  
+## Reveal.js Presentation
+
+- **Framework:** Reveal.js  
+- **Hosting:** GitHub Pages  
+- **Features:**  
+  - Markdown  
+  - Images  
+  - Non-default theme  
+  - Horizontal & vertical navigation
+
+---
+
+# Overview
+
+- What Reveal.js is  
+- How slides are structured  
+- How navigation works  
+- Sources and screenshots
+
+---
+
+# Reveal.js Basics
+
+- HTML presentation framework  
+- Supports:
+  - Markdown
+  - Themes
+  - Plugins
+- Keyboard navigation:
+  - Left/Right → horizontal
+  - Up/Down → vertical
+
+---
+
+# Slide Structure
+
+- **Horizontal slides:** separated by `---`
+- **Vertical slides:** separated by `--` under the same parent
+
+---
+
+# Example: Vertical Slide Group
+
+## Main Topic (Horizontal)
+
+- This is the **parent** slide  
+- Press **Down** to see details
+
+--
+
+## Detail 1 (Vertical)
+
+- First vertical slide under “Main Topic”  
+- You can add bullet points, code, etc.
+
+--
+
+## Detail 2 (Vertical)
+
+- Second vertical slide  
+- More explanation or examples
+
+---
+
+# Images Example
+
+![Sample Image](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/512px-Placeholder_view_vector.svg.png)
+
+- Use standard markdown image syntax:
+  - `![alt text](image-url)`
+- You can host images:
+  - On the web (like above)
+  - Or in your repo (e.g. `images/pic1.png`)
+
+---
+
+# Sources
+
+- Reveal.js official site:  
+  - https://revealjs.com
+- GitHub Pages docs:  
+  - https://docs.github.com/en/pages
+- Image placeholder:  
+  - Wikimedia Commons placeholder image
+
+---
+
+# For the Report
+
+- **URL of presentation:**  
+  - `https://rayenesh17.github.io/`
+- **Link to sources:**  
+  - Reveal.js docs, GitHub Pages docs, image sources
+- **Screenshots:**  
+  - Take screenshots of:
+    - Title slide  
+    - Vertical slide group  
+    - Image slide
+
+Note:
+Use these notes if you present live – they don’t show on the main slide.
+      </textarea>
+    </section>
+  </div>
+</div>
+
+<!-- Reveal.js core JS -->
+<script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
+
+<!-- Plugins -->
+<script src="https://unpkg.com/reveal.js/plugin/markdown/markdown.js"></script>
+<script src="https://unpkg.com/reveal.js/plugin/highlight/highlight.js"></script>
+<script src="https://unpkg.com/reveal.js/plugin/notes/notes.js"></script>
+
+<script>
+  Reveal.initialize({
+    hash: true,
+    controls: true,
+    progress: true,
+    slideNumber: true,
+    center: true,
+    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+  });
+</script>
+
+</body>
+</html>
 
